@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Navbar from "./NavBar";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";

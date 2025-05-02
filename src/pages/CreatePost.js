@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 import Editor from "../utils/Editor";
-import Cookies from "js-cookie"; 
 
 export default function CreatePost() {
   const [title, setTitle] = useState("");
