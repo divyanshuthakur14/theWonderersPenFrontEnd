@@ -10,7 +10,6 @@ import "../css/forms.css";
 export default function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [redirect, setRedirect] = useState(false);
   const { setUserInfo } = useContext(UserContext);
   const navigate = useNavigate();
 
@@ -42,10 +41,6 @@ export default function LoginPage() {
 
   function createAccount() {
     navigate("/register");
-  }
-
-  if (redirect) {
-    return <Navigate to={"/"} />;
   }
 
   return (

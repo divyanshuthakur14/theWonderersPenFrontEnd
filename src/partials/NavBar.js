@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "../css/home.css";
 
 const Hamburger = () => (
   <svg
@@ -61,7 +62,7 @@ const Navbar = () => {
         setUserInfo(userInfo);
       });
     });
-  }, []);
+  }, [setUserInfo]);
 
   function logout() {
     fetch("https://thewondererspenbackend.onrender.com/logout", {
@@ -117,9 +118,15 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a onClick={() => { logout(); closeNavbarAndNavigate("/"); }}>
-                    LOGOUT ({username})
-                  </a>
+                <button
+    onClick={() => {
+      logout();
+      closeNavbarAndNavigate("/");
+    }}
+    className="logout-button"
+  >
+    LOGOUT ({username})
+  </button>
                 </li>
               </>
             )}
