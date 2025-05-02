@@ -1,0 +1,206 @@
+/* General container styles */
+.login-container, .register-container {
+  width: 100%;
+  max-width: 320px; 
+  margin: 50px auto;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 6px; 
+  border-radius: 5px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.legend {
+  font-size: 1.1em; 
+  font-weight: bold;
+  margin-bottom: 6px; 
+}
+
+
+.user-image-container {
+  margin-bottom: 12px; 
+}
+
+.user-image {
+  width: 70px; 
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+
+input {
+  margin: 6px 0; 
+  padding: 8px; 
+  width: 90vw;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px; 
+  align-items: center;
+}
+
+
+.button-forms {
+  padding: 8px; 
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  font-size: 14px; 
+  border-radius: 5px;
+  width: 90vw;
+}
+
+.button-forms:hover {
+  background-color: #0056b3;
+}
+
+.register-btn {
+  background-color: #28a745;
+  width: 90vw;
+
+}
+
+.register-btn:hover {
+  background-color: #218838;
+}
+
+/* Create account */
+.create-account-container {
+  margin-top: 12px; 
+}
+
+.create-account-container p {
+  margin-bottom: 8px; 
+  font-size: 13px; 
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .user-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  input, .button-forms {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .register-btn {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-image {
+    width: 55px;
+    height: 55px;
+  }
+
+  input, .button-forms {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .register-btn {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container, .register-container {
+    padding: 12px;
+    margin: 8px;
+  }
+
+  .user-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  input, .button-forms {
+    font-size: 12px;
+    padding: 6px;
+    align-items: center;
+    justify-content: center;
+    width: 90%;        /* Responsive width */
+    max-width: 400px;  /* Prevents it from being too wide */
+  }
+
+  .create-account-container p {
+    font-size: 11px;
+  }
+
+  .register-btn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .login-container, .register-container {
+    padding: 8px;
+    margin: 5px;
+  }
+
+  .user-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  input, .button-forms {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .create-account-container p {
+    font-size: 11px;
+  }
+
+  .create-account-container a {
+    color: white; 
+    text-decoration: none; 
+  }
+
+  .register-btn {
+    font-size: 12px;
+  }
+}
