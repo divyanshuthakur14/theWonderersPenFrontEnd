@@ -3,7 +3,7 @@ import { Navigate, useParams } from "react-router-dom";
 import Editor from "../utils/Editor";
 
 export default function EditPost() {
-  const { id } = useParams();
+  const { id } = useParams();  // Extract 'id' from URL params
   const [title, setTitle] = useState("");
   const [summary, setSummary] = useState("");
   const [content, setContent] = useState("");
@@ -11,14 +11,15 @@ export default function EditPost() {
   const [redirect, setRedirect] = useState(false);
 
   useEffect(() => {
-    fetch("https://thewondererspenbackend.onrender.com/post/" + id).then((response) => {
-      response.json().then((postInfo) => {
+    // Fetch post data based on the 'id'
+    fetch("https://thewondererspenbackend.onrender.com/post/" + id)
+      .then((response) => response.json())
+      .then((postInfo) => {
         setTitle(postInfo.title);
         setContent(postInfo.content);
         setSummary(postInfo.summary);
       });
-    });
-  }, []);
+  }, [id]);  // Add 'id' to the dependency array
 
   async function updatePost(ev) {
     ev.preventDefault();
@@ -47,13 +48,13 @@ export default function EditPost() {
   return (
     <form onSubmit={updatePost}>
       <input
-        type="title"
+        type="text"
         placeholder={"Title"}
         value={title}
         onChange={(ev) => setTitle(ev.target.value)}
       />
       <input
-        type="summary"
+        type="text"
         placeholder={"Summary"}
         value={summary}
         onChange={(ev) => setSummary(ev.target.value)}

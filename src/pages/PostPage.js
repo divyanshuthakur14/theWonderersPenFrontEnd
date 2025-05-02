@@ -8,15 +8,17 @@ export default function PostPage() {
   const [postInfo, setPostInfo] = useState(null);
   const { userInfo } = useContext(UserContext);
   const { id } = useParams();
+
   useEffect(() => {
-    fetch(`https://thewondererspenbackend.onrender.com/post/${id}`).then((response) => {
-      response.json().then((postInfo) => {
+    // Fetch post information based on the post ID
+    fetch(`https://thewondererspenbackend.onrender.com/post/${id}`)
+      .then((response) => response.json())
+      .then((postInfo) => {
         setPostInfo(postInfo);
       });
-    });
-  }, []);
+  }, [id]);  // Add 'id' to the dependency array
 
-  if (!postInfo) return "";
+  if (!postInfo) return "";  // Render nothing if no post info is available
 
   return (
     <div className="post-page">
@@ -45,7 +47,7 @@ export default function PostPage() {
         </div>
       )}
       <div className="image">
-      <img src={postInfo.cover} alt="" />
+        <img src={postInfo.cover} alt="" />
       </div>
       <div
         className="content"

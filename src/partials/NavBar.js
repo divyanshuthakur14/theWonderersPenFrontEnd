@@ -1,45 +1,15 @@
 import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../utils/UserContext";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Hamburger = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="52"
-    height="24"
-    viewBox="0 0 52 24"
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="52" height="24" viewBox="0 0 52 24">
     <g id="Group_9" data-name="Group 9" transform="translate(-294 -47)">
-      <rect
-        id="Rectangle_3"
-        data-name="Rectangle 3"
-        width="42"
-        height="4"
-        rx="2"
-        transform="translate(304 47)"
-        fill="#574c4c"
-      />
-      <rect
-        id="Rectangle_5"
-        data-name="Rectangle 5"
-        width="42"
-        height="4"
-        rx="2"
-        transform="translate(304 67)"
-        fill="#574c4c"
-      />
-      <rect
-        id="Rectangle_4"
-        data-name="Rectangle 4"
-        width="52"
-        height="4"
-        rx="2"
-        transform="translate(294 57)"
-        fill="#574c4c"
-      />
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="42" height="4" rx="2" transform="translate(304 47)" fill="#574c4c" />
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="42" height="4" rx="2" transform="translate(304 67)" fill="#574c4c" />
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="52" height="4" rx="2" transform="translate(294 57)" fill="#574c4c" />
     </g>
   </svg>
 );
@@ -47,38 +17,43 @@ const Hamburger = () => (
 const Navbar = () => {
   const navigate = useNavigate();
   const [showNavbar, setShowNavbar] = useState(false);
+  const [username, setUsername] = useState(null);
+  
+  const { setUserInfo, userInfo } = useContext(UserContext);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
 
-  const { setUserInfo, userInfo } = useContext(UserContext);
   useEffect(() => {
+    // Fetch user info when the component mounts
     fetch("https://thewondererspenbackend.onrender.com/profile", {
       credentials: "include",
-    }).then((response) => {
-      response.json().then((userInfo) => {
+    })
+      .then((response) => response.json())
+      .then((userInfo) => {
         setUserInfo(userInfo);
+        setUsername(userInfo?.username); // Set username to the state for reactivity
       });
-    });
-  }, []);
+  }, [setUserInfo]); // Set userInfo only when it changes
 
-  function logout() {
+  const logout = () => {
     fetch("https://thewondererspenbackend.onrender.com/logout", {
       credentials: "include",
       method: "POST",
-    });
-    setUserInfo(null);
-    toast.info("Logged out", {
-      onClose: () => navigate("/"),
-    });
-  }
-
-  const username = userInfo?.username;
+    })
+      .then(() => {
+        setUserInfo(null);
+        setUsername(null); // Clear username after logout
+        toast.info("Logged out", {
+          onClose: () => navigate("/"),
+        });
+      });
+  };
 
   const closeNavbarAndNavigate = (path) => {
-    setShowNavbar(false);  
-    navigate(path);  
+    setShowNavbar(false);
+    navigate(path);
   };
 
   return (

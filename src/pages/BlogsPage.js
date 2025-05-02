@@ -1,13 +1,13 @@
 import Post from "../partials/Post";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import "../css/home.css";
-
 
 export default function BlogsPage() {
   const [posts, setPosts] = useState([]);
   const [search, setSearch] = useState("");
 
-  const fetchPosts = async () => {
+  // Memoize fetchPosts to prevent unnecessary re-creation
+  const fetchPosts = useCallback(async () => {
     const url = search
       ? `https://thewondererspenbackend.onrender.com/post?search=${encodeURIComponent(search)}`
       : "https://thewondererspenbackend.onrender.com/post";
@@ -19,11 +19,12 @@ export default function BlogsPage() {
     } catch (err) {
       console.error("Failed to fetch posts:", err);
     }
-  };
+  }, [search]); // Memoize fetchPosts based on search
 
+  // Effect to fetch posts whenever search changes
   useEffect(() => {
     fetchPosts();
-  }, [search]); 
+  }, [search, fetchPosts]); // Include fetchPosts in dependency array
 
   return (
     <div className="blogs-container">
