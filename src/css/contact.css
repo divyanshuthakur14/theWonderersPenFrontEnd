@@ -18,7 +18,7 @@ div.body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #7C4585, #154c79);
+  background:black;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -31,7 +31,7 @@ div.body::after {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(135deg, #7C4585, #154c79);
+  background: black
 }
 
 section {
