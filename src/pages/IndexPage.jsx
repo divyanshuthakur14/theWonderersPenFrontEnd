@@ -1,4 +1,5 @@
 import "../css/home.css";
+import "../css/about.css";
 import { useEffect } from "react";
 
 const About = () => (
