@@ -3,11 +3,12 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f1f1f1;
+  background-color: white;
 }
 
 .about {
   height: 95vh;
+  width: 100vw;
   background: linear-gradient(135deg, #7C4585, #9C2A70);
   text-align: center;
   display: flex;
@@ -15,8 +16,7 @@ body {
   align-items: center;
   color: white;
   flex-direction: column;
-  padding: 0 10%;
-  margin-bottom: 20px;
+  padding: 0;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   z-index: 1;
@@ -106,7 +106,6 @@ button:hover {
 
 /* Brief Section */
 .brief {
-  margin: 5% auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -117,6 +116,7 @@ button:hover {
   background: linear-gradient(135deg, #7C4585, #154c79);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   animation: fadeInUp 1s ease forwards;
+  width: 100vw;
 }
 
 .fa-globe-americas {
@@ -146,9 +146,6 @@ button:hover {
   animation: typing 2s steps(100, end) 1; 
 }
 
-.typing-text.finished {
-  
-}
 
 @keyframes typing {
   from {
@@ -204,6 +201,7 @@ button:hover {
   flex-wrap: wrap;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   animation: fadeInUp 1.5s ease forwards;
+  width: 100vw;
 }
 
 @keyframes fadeInUp {
@@ -319,6 +317,7 @@ button:hover {
   opacity: 1; 
   transform: translateY(0); 
   transition: all 0.5s ease-in-out; 
+  width: 100vw;
 }
 
 .takeproduct:hover {
@@ -369,6 +368,7 @@ button:hover {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 1s ease-out forwards, bounce 2s infinite;
+  width: 100vw;
 }
 
 .testimonialcomment {
@@ -441,6 +441,7 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100vw;
 }
 
 
@@ -474,6 +475,7 @@ button:hover {
   font-size: 1.4rem;
   font-weight: 600;
   background-color: white;
+  width: 100vw;
 }
 
 .buyinghead {
@@ -527,7 +529,6 @@ button:hover {
 
   .brief {
     flex-direction: column;
-    margin: 3%;
   }
 
   .right {

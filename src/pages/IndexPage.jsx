@@ -47,6 +47,7 @@ const Brief = () => {
 };
 
 
+
 const WhyBuy = () => (
   <div className="whybuy">
     <div className="brief1">
@@ -87,6 +88,8 @@ const WhyBuy = () => (
   </div>
 );
 
+
+
 const TakeProduct = () => (
   <div className="takeproduct">
     <div className="takeproducthead">Carry a notebook with You Everywhere</div>
@@ -98,6 +101,8 @@ const TakeProduct = () => (
     </div>
   </div>
 );
+
+
 
 const Testimonial = () => (
   <div className="testimonial">
@@ -140,6 +145,8 @@ const Reasons = () => (
   </div>
 );
 
+
+
 const Buying = () => (
   <div className="buying">
     <div className="buyinghead">Why are you still reading</div>
@@ -150,6 +157,8 @@ const Buying = () => (
     </div>
   </div>
 );
+
+
 
 const IndexPage = () => (
   <div className="home-body">
@@ -162,5 +171,7 @@ const IndexPage = () => (
     <Buying />
   </div>
 );
+
+
 
 export default IndexPage;

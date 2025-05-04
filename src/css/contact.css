@@ -22,7 +22,6 @@ div.body {
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-top: 10px; 
 }
 
 div.body::after {
@@ -184,11 +183,13 @@ section {
   color: #666;
 }
 
-.contact-form .input-box input:focus ~ span,
-.contact-form .input-box textarea:focus ~ span {
+
+.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:valid ~ span {
   color: #e91e63;
   font-size: 12px;
   transform: translateY(-20px);
+  opacity: 0; 
 }
 
 .contact-form .input-box input[type="submit"] {
