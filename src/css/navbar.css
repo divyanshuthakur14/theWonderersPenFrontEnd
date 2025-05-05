@@ -30,12 +30,13 @@
   }
   .logo img {
     height: 50px;
-    width:fit-content;
-    object-fit: fill;
-    position: absolute;
     left: 20px;
     top: 5px;
     animation: slideInFromLeftWithOpacity 1.5s ease-out forwards;  
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    animation: slideInFromLeftWithOpacity 1.5s ease-out forwards;
   }
   
   .menu-icon {
