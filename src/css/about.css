@@ -89,6 +89,7 @@
   }
   .mobile {
     display: none;
+    animation: slideInFromRight 1.5s ease-out forwards;
   }
   @media (max-width: 768px) {
     .side-image {
@@ -96,6 +97,17 @@
     }
     .mobile {
       display: block;
+
+    }
+    @keyframes slideInFromRight {
+      0% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
     .about {
       flex-direction: column;
