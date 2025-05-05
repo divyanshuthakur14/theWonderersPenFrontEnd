@@ -60,7 +60,6 @@
     cursor: pointer;
     border-radius: 50px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 30px;
     background: transparent;
   }
   .about-right {
