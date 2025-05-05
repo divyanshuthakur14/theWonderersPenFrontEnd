@@ -21,7 +21,7 @@ const Hamburger = () => (
         height="4"
         rx="2"
         transform="translate(304 47)"
-        fill="#574c4c"
+        fill="white"
       />
       <rect
         id="Rectangle_5"
@@ -30,7 +30,7 @@ const Hamburger = () => (
         height="4"
         rx="2"
         transform="translate(304 67)"
-        fill="#574c4c"
+        fill="white"
       />
       <rect
         id="Rectangle_4"
@@ -39,7 +39,7 @@ const Hamburger = () => (
         height="4"
         rx="2"
         transform="translate(294 57)"
-        fill="#574c4c"
+        fill="white"
       />
     </g>
   </svg>

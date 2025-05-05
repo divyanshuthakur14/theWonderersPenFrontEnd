@@ -1,5 +1,11 @@
 import "../css/home.css";
 import "../css/about.css";
+import "../css/brief.css";
+import "../css/whybuy.css";
+import "../css/takeproduct.css";
+
+
+
 import { useEffect } from "react";
 
 const About = () => (
@@ -33,11 +39,10 @@ const Brief = () => {
       typingElement.classList.add('finished'); 
     });
   }, []);
-
   return (
     <div className="brief">
       <div className="left">
-        <i className="fas fa-globe-americas"></i>
+      <img src="/globe.jpg" alt="globe" className="left-image" />
       </div>
       <div className="right">
         <p className="typing-text">
@@ -64,7 +69,6 @@ const WhyBuy = () => (
         </p>
       </div>
     </div>
-
     <div className="brief2">
       <div className="brief21">
         <p>🚀 Elevate Your Mind</p>
@@ -120,35 +124,6 @@ const Testimonial = () => (
 
 
 
-const Reasons = () => (
-  <div className="reasons">
-    <div className="reasonshead">Reasons to Dive into The Wonderer's pen:</div>
-    <div className="reasonss">
-      <div className="reasons1">
-        <ul>
-          <li>
-            ✨ It's the Best - A curated collection of the finest thoughts,
-            ideas, and stories.
-          </li>
-          <li>
-            😊 It Makes You Happy - Because a good read has the power to uplift
-            your spirits.
-          </li>
-          <li>
-            🌐 It Brings World Peace - By fostering understanding and empathy
-            through shared experiences.
-          </li>
-          <li>
-            🎁 It's Free! - The most valuable things in life often come without
-            a price tag.
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-);
-
-
 
 const Buying = () => (
   <div className="buying">
@@ -168,7 +143,6 @@ const IndexPage = () => (
     <WhyBuy />
     <TakeProduct />
     <Testimonial />
-    <Reasons />
     <Buying />
   </div>
 );

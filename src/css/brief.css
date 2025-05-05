@@ -1,0 +1,70 @@
+.brief {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: black;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 680px;
+  gap: 20px;
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.left{
+  height: 680px;
+  left: 0;
+  width: 100%;
+  animation: slideInLeft 1.5s ease forwards;
+}
+.left-image{
+  width: 100%;
+}
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.right {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 400;
+  width: 100%;
+  animation: slideInRight 1.5s ease forwards;
+}
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+@media (max-width: 768px) {
+  .brief {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 150px;
+    margin-bottom:150px;
+  }
+  .right {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+}

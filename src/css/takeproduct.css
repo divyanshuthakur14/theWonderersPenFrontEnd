@@ -1,0 +1,95 @@
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInNotebook {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .takeproduct {
+    background: black;
+    padding-bottom: 5%;
+    color: white;
+    opacity: 1;
+    width: 100vw;
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    margin-bottom: 20px;
+  }
+.takeproduct::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%; 
+    height: 50%; 
+    background-image: url('/public/Notebook.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: slideInNotebook 1.5s ease-out forwards;
+    z-index: 1;
+  }
+  .takeproducthead {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    animation: slideInLeft 1s ease-out;
+  }
+  .takeproductinfo {
+    position: relative;
+    margin-top: 25px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: white;
+    animation: slideInRight 1.5s ease-out;
+    z-index: 2;
+  }
+
+  @media (max-width: 768px) {
+    .takeproduct::before {
+      width: 100%;
+      left: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .takeproduct::before {
+      width: 100%;
+      left: 0;
+    }
+  }
+  
+  
