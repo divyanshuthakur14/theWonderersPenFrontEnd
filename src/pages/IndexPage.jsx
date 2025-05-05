@@ -3,6 +3,9 @@ import "../css/about.css";
 import "../css/brief.css";
 import "../css/whybuy.css";
 import "../css/takeproduct.css";
+import "../css/testimonial.css";
+import "../css/buying.css";
+import "../css/footer.css";
 
 
 

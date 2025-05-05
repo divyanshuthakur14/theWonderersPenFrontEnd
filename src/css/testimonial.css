@@ -1,0 +1,45 @@
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.testimonial {
+    background-color: black;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    width: 100vw;
+    animation: fadeInUp 1s ease-out;
+    margin-top: 40px;
+  }
+  .testimonialcomment {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-style: italic;
+    word-wrap: break-word;
+  }
+  .testimonialcustomer {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 15px;
+    letter-spacing: 1px;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  .bouncing-customer {
+    display: inline-block;
+    animation: bounce 2s infinite;
+  }
+  

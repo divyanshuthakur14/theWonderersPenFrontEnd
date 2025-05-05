@@ -64,7 +64,7 @@ export default function RegisterPage() {
 
       <div className="create-account-container">
         <p>
-          Already have an account? <a href="/login" style={{ color: 'black', textDecoration: 'underline' }} >Login</a>
+          Already have an account? <a href="/login" style={{ color: 'white', textDecoration: 'underline' }} >Login</a>
         </p>
       </div>
 
