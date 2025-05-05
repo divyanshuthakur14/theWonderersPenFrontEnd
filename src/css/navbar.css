@@ -8,7 +8,6 @@
     height: 100%;
     min-height: 60px;
   }
-  
   .navbar {
     height: 60px;
     background-color: black;
@@ -38,23 +37,19 @@
     top: 5px;
     animation: slideInFromLeftWithOpacity 1.5s ease-out forwards;  
   }
-  
   .menu-icon {
     display: none;
     cursor: pointer;
     z-index: 100;
   }
-
   .nav-elements ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
   }
-  
   .nav-elements ul li:not(:last-child) {
     margin-right: 60px;
   }
-  
   .nav-elements ul a {
     font-size: 16px;
     font-weight: 400;
@@ -64,18 +59,15 @@
     border-radius: 5px;
     transition: all 0.3s ease;
   }
-  
   .nav-elements ul a:hover {
     background-color: #f0f0f0;
     color: #574c4c;
   }
-  
   .nav-elements ul a.active {
     color: #574c4c;
     font-weight: 500;
     position: relative;
   }
-  
   .nav-elements ul a.active::after {
     content: "";
     position: absolute;
@@ -85,7 +77,6 @@
     height: 2px;
     background-color: #574c4c;
   }
-
   .logout-button {
     background: none;
     border: none;
@@ -102,7 +93,6 @@
       margin-right: unset;
     }
   }
-  
   @media (max-width: 850px) {
     @keyframes slideInFromRight {
         0% {
@@ -118,8 +108,9 @@
       display: block;
       cursor: pointer;
       animation: slideInFromRight 1.5s ease-out forwards;
+      position: absolute;
+      right: 20px;
     }
-  
     .nav-elements {
       position: absolute;
       right: 0;
@@ -132,11 +123,9 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       padding: 20px 0;
     }
-  
     .nav-elements.active {
       width: 270px;
     }
-  
     .nav-elements ul {
       flex-direction: column;
       align-items: center;
@@ -144,13 +133,11 @@
       padding: 0;
       margin: 0;
     }
-  
     .nav-elements ul li {
       margin-right: unset;
       width: 100%;
       text-align: center;
     }
-  
     .nav-elements ul a {
       padding: 15px 20px;
       font-size: 18px;
@@ -161,12 +148,10 @@
       align-items: center;
       justify-content: center;
     }
-  
     .nav-elements ul a:hover {
       background-color: #f0f0f0;
       color: #574c4c;
     }
-  
     .nav-elements ul a.active {
       background-color: #f0f0f0;
       color: #7c4585;
