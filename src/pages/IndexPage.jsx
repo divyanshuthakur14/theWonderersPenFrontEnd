@@ -6,6 +6,8 @@ import "../css/takeproduct.css";
 import "../css/testimonial.css";
 import "../css/buying.css";
 import "../css/footer.css";
+import "../css/navbar.css";
+
 
 
 
