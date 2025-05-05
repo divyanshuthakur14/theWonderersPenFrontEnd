@@ -1,28 +1,23 @@
-
 .footer {
     background-color: #000000;
     color: #fff;
     padding: 20px;
     text-align: center;
   }
-  
   .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
   .footer-content ul {
     text-align: center;
     list-style: none;
     padding: 0;
   }
-  
   .footer-content li {
     margin: 0 10px;
     display: inline;
   }
-  
   .footer-content a {
     color: #fff;
     text-decoration: none;

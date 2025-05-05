@@ -3,7 +3,6 @@ import { UserContext } from "../utils/UserContext";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 import "../css/forms.css";
 
 export default function LoginPage() {
@@ -11,7 +10,6 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const { setUserInfo } = useContext(UserContext);
   const navigate = useNavigate();
-
   async function login(ev) {
     ev.preventDefault();
     try {
@@ -21,7 +19,6 @@ export default function LoginPage() {
         headers: { "Content-Type": "application/json" },
         credentials: "include",
       });
-
       if (response.ok) {
         response.json().then((userInfo) => {
           setUserInfo(userInfo);
@@ -37,16 +34,15 @@ export default function LoginPage() {
       toast.error("Login failed. Please check your credentials.");
     }
   }
-
   function createAccount() {
     navigate("/register");
   }
+
 
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={login}>
         <h1>Login</h1>
-
         <div className="user-image-container">
           <img
             src="https://img.freepik.com/premium-vector/anonymous-user-circle-icon-vector-illustration-flat-style-with-long-shadow_520826-1931.jpg"
@@ -54,29 +50,25 @@ export default function LoginPage() {
             className="user-image"
           />
         </div>
-
         <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={(ev) => setUsername(ev.target.value)}
         />
-
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(ev) => setPassword(ev.target.value)}
         />
-
         <button className="button-forms" type="submit">
           Login
         </button>
       </form>
-
       <div className="create-account-container">
         <p>Don't have an account?</p>
-        <button className="button-forms register-btn" onClick={createAccount}>
+        <button className="register" onClick={createAccount}>
           Create New Account
         </button>
       </div>

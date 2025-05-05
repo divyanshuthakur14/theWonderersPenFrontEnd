@@ -8,7 +8,6 @@ export default function RegisterPage() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
   async function register(ev) {
     try {
       ev.preventDefault();
@@ -30,7 +29,6 @@ export default function RegisterPage() {
       toast.error("Registration failed. Please try again.");
     }
   }
-
   return (
     <div className="register-container">
       <form className="register-form" onSubmit={register}>
@@ -42,32 +40,27 @@ export default function RegisterPage() {
             className="user-image"
           />
         </div>
-
         <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={(ev) => setUsername(ev.target.value)}
         />
-
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(ev) => setPassword(ev.target.value)}
         />
-
         <button className="button-forms register-btn" type="submit">
           Register
         </button>
       </form>
-
       <div className="create-account-container">
         <p>
           Already have an account? <a href="/login" style={{ color: 'white', textDecoration: 'underline' }} >Login</a>
         </p>
       </div>
-
       <ToastContainer />
     </div>
   );
