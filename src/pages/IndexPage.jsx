@@ -29,6 +29,7 @@ const About = () => (
     </div>
       <div className="about-right">
         <img src="/writing.jpg" alt="Writing" className="side-image" />
+        <img src="/writing2.png" alt="Writing small" className="mobile" />
       </div>
   </div>
 );

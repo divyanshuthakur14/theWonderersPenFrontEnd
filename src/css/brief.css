@@ -70,8 +70,10 @@
     position: absolute;
     height: 400px;
   }
+  .left-image{
+    opacity: 0.7;
+  }
   .right {
-   
     text-align: center;
     z-index: 2;
     position: relative;

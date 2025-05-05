@@ -85,10 +85,18 @@
     height: 600px;
     object-fit: cover;
     animation: slideInFromRight 1.5s ease-out forwards;
+    display: block;
   }
-  
-  /* Responsive Styles */
+  .mobile {
+    display: none;
+  }
   @media (max-width: 768px) {
+    .side-image {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
     .about {
       flex-direction: column;
       height: auto;
