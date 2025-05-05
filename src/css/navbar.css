@@ -90,7 +90,9 @@
     font: inherit;
     cursor: pointer;
     text-decoration: underline;
-    width: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: auto; /* allow content-based width */
   }
   
   
