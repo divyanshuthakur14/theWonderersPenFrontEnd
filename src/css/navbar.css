@@ -95,11 +95,8 @@
     text-decoration: underline;
     padding: 10px 15px;
     border-radius: 5px;
-    width: auto; /* allow content-based width */
+    width: 60px;
   }
-  
-  
-  
   @media (max-width: 768px) {
     .nav-elements ul li:not(:last-child) {
       margin-right: unset;
