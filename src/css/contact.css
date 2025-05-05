@@ -186,7 +186,7 @@ section {
 
 .contact-form .input-box input:valid ~ span,
 .contact-form .input-box textarea:valid ~ span {
-  color: #e91e63;
+  color: black;
   font-size: 12px;
   transform: translateY(-20px);
   opacity: 0; 
@@ -194,19 +194,19 @@ section {
 
 .contact-form .input-box input[type="submit"] {
   width: 100%;
-  background: #00bcd4;
+  background: gray;
   color: #fff;
   border: none;
   cursor: pointer;
   padding: 10px;
   font-size: 18px;
-  border: 1px solid #00bcd4;
+  border: 1px solid black;
   transition: 0.5s;
 }
 
 .contact-form .input-box input[type="submit"]:hover {
   background: #fff;
-  color: #00bcd4;
+  color: black;
 }
 
 @media (max-width: 600px) {
@@ -267,36 +267,29 @@ section {
   .section-header h2 {
     font-size: 2.5em;
   }
-
   .row {
     flex-direction: column;
     align-items: center;
   }
-
   .contact-info {
     width: 100%;
     margin-bottom: 40px;
   }
-
   .contact-form {
     width: 85%;
   }
-
   .contact-form h2 {
     font-size: 1.75em;
   }
-
   .contact-form .input-box input,
   .contact-form .input-box textarea {
     font-size: 15px;
   }
-
   .contact-form .input-box input[type="submit"] {
     font-size: 16px;
     padding: 10px;
   }
 }
-
 @media (min-width: 991px) {
   .contact-form {
     width: 45%;

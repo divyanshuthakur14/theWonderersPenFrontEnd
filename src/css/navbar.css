@@ -82,6 +82,18 @@
     height: 2px;
     background-color: #574c4c;
   }
+
+  .logout-button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+    width: 50px;
+  }
+  
+  
   
   @media (max-width: 768px) {
     .nav-elements ul li:not(:last-child) {
