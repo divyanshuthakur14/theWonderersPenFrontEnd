@@ -1,3 +1,12 @@
+div.post-page div.image {
+    max-width: 50%;
+    display: flex;
+    overflow: hidden;
+}
+
+  
+
+
 .content {
     color: white;
 }
@@ -16,6 +25,30 @@
 img {
     max-width: 100%;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Post */
 .post {
     display: flex;
@@ -101,11 +134,7 @@ img {
     }
   }
   
-  div.post-page div.image {
-    max-height: 300px;
-    display: flex;
-    overflow: hidden;
-  }
+
   div.post-page div.image img {
     object-fit: cover;
     object-position: center center;
