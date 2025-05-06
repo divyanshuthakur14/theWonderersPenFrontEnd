@@ -34,42 +34,14 @@ div.post-page div.image {
 
 
 
+
+
+
+
+
 .post-page {
     color:white;
 }
-.image img {
-    width: 100%;
-    height: auto;
-    border-radius: 0px;
-    object-fit: cover;
-}
-img {
-    max-width: 100%;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Post */
 .post {
     display: flex;
