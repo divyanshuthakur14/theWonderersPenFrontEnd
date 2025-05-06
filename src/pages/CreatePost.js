@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
-import Editor from "../utils/Editor"
+import Editor from "../utils/Editor";
+import "../css/createpost.css";
 
 export default function CreatePost() {
   const [title, setTitle] = useState("");
