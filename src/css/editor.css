@@ -1,0 +1,27 @@
+/* Editor content text */
+.ql-editor {
+    color: white;
+  }
+  
+  /* Toolbar icons and labels */
+  .ql-toolbar {
+    color: white;
+  }
+  
+  /* Toolbar buttons (icons) */
+  .ql-toolbar button svg {
+    stroke: white;
+    fill: white;
+  }
+  
+  /* Dropdown text (e.g., headers) */
+  .ql-toolbar .ql-picker {
+    color: white;
+  }
+  
+  /* Dropdown arrow */
+  .ql-toolbar .ql-picker-options {
+    background-color: #333; /* dark background */
+    color: white;
+  }
+  
