@@ -7,11 +7,13 @@
 .author {
     color: white;
 }
-.image {
-    border-radius: 0;
-}
-
-
+.image img {
+    width: 250px;
+    height: auto;
+    border-radius: 0px;
+    object-fit: cover;
+  }
+  
 div.post {
     display: grid;
     grid-template-columns: 1fr;
