@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 import Editor from "../utils/Editor";
+import "../css/createpost.css";
 
 export default function CreatePost() {
   const [title, setTitle] = useState("");
@@ -57,6 +58,7 @@ export default function CreatePost() {
         placeholder="Title"
         value={title}
         onChange={(ev) => setTitle(ev.target.value)}
+        className="inp1"
       />
       <input
         type="text"
