@@ -33,7 +33,6 @@ div.post div.texts h2 {
   line-height: 1.5;
   color: white;
   text-align: left;
-  margin-left: 25%;
 }
 div.post p.info {
   margin: 24px 0;
@@ -42,6 +41,8 @@ div.post p.info {
   font-weight: bold;
   display: flex;
   gap: 10px;
+  margin-left: 25%;
+
 }
 .texts {
   flex: 1;
