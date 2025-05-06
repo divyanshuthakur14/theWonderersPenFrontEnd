@@ -2,6 +2,7 @@ div.post-page div.image {
     width: 50%;
     display: flex;
     overflow: hidden;
+    margin-left: 25%;
 }
 
   
