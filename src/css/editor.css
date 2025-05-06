@@ -1,27 +1,20 @@
-/* Editor content text */
-.ql-editor {
-    color: white;
-  }
-  
-  /* Toolbar icons and labels */
-  .ql-toolbar {
-    color: white;
-  }
-  
-  /* Toolbar buttons (icons) */
-  .ql-toolbar button svg {
-    stroke: white;
-    fill: white;
-  }
-  
-  /* Dropdown text (e.g., headers) */
-  .ql-toolbar .ql-picker {
-    color: white;
-  }
-  
-  /* Dropdown arrow */
-  .ql-toolbar .ql-picker-options {
-    background-color: #333; /* dark background */
-    color: white;
-  }
-  
+/* Fix faded toolbar icons (due to opacity) */
+.ql-toolbar button svg {
+  opacity: 1 !important;
+}
+
+/* Make active, hover, and focus states white */
+.ql-toolbar button:hover svg,
+.ql-toolbar button:focus svg,
+.ql-toolbar button.ql-active svg {
+  stroke: white !important;
+  fill: white !important;
+  opacity: 1 !important;
+}
+
+/* Also make dropdown items white */
+.ql-toolbar .ql-picker-label,
+.ql-toolbar .ql-picker-item {
+  color: white !important;
+  fill: white !important;
+}
