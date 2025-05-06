@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../css/forms.css";
+import GoogleAuth from "./GoogleAuth";  // Import your GoogleAuth component
+
+
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
@@ -66,6 +69,10 @@ export default function LoginPage() {
           Login
         </button>
       </form>
+
+      {/* Add Google OAuth login button here */}
+      <GoogleAuth />
+
       <div className="create-account-container">
         <p>Don't have an account?</p>
         <button className="register" onClick={createAccount}>

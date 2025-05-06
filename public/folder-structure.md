@@ -14,11 +14,19 @@
     └── 📁src
         └── App.js
         └── 📁css
+            └── about.css
             └── App.css
+            └── brief.css
+            └── buying.css
             └── contact.css
+            └── footer.css
             └── forms.css
             └── home.css
             └── index.css
+            └── navbar.css
+            └── takeproduct.css
+            └── testimonial.css
+            └── whybuy.css
         └── index.js
         └── 📁pages
             └── BlogsPage.js
