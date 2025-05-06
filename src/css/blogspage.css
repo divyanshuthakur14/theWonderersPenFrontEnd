@@ -7,6 +7,7 @@ div.post p.summary {
   margin: 10px 0;
   line-height: 1.8rem;
   color: white;
+  margin-left: 25%;
 }
 .post {
   display: flex;
@@ -20,6 +21,7 @@ div.post div.texts h2 {
   margin: 0;
   font-size: 2rem;
   color: white;
+  margin-left: 25%;
 }
 .author {
   font-weight: bold;
@@ -31,6 +33,7 @@ div.post div.texts h2 {
   line-height: 1.5;
   color: white;
   text-align: left;
+  margin-left: 25%;
 }
 div.post p.info {
   margin: 24px 0;
