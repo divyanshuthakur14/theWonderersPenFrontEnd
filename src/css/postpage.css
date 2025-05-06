@@ -28,6 +28,34 @@ div.post-page div.image {
     overflow: hidden;
     margin-left: 25%;
 }
+div.edit-row {
+    text-align: center;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+div.post-page h1 {
+    font-size: 1.5rem; 
+    text-align: left;
+    margin: 10px 0;
+    overflow-wrap: break-word;
+    white-space: normal; 
+}
+@media(max-width:768px){
+    div.post-page h1 {
+        font-size: 1.5rem; 
+        text-align: center;
+        margin: 10px 0;
+        overflow-wrap: break-word;
+        white-space: normal; 
+      }
+      div.post-page time,
+      div.post-page div.author {
+        font-size: 0.8rem; 
+        text-align: center;
+      }
+}
 
 
 
@@ -140,19 +168,9 @@ div.post-page div.image {
       white-space: normal;
     }
   
-    div.post-page h1 {
-      font-size: 1.5rem; 
-      text-align: left;
-      margin: 10px 0;
-      overflow-wrap: break-word;
-      white-space: normal; 
-    }
+
   
-    div.post-page time,
-    div.post-page div.author {
-      font-size: 0.8rem; 
-      text-align: left;
-    }
+  
   
     div.post-page div.author {
       margin-bottom: 15px;
@@ -193,12 +211,6 @@ div.post-page div.image {
   }
   div.content li {
     margin-bottom: 10px;
-    overflow-wrap: break-word;
-    white-space: normal;
-  }
-  div.edit-row {
-    text-align: left;
-    margin-bottom: 20px;
     overflow-wrap: break-word;
     white-space: normal;
   }
