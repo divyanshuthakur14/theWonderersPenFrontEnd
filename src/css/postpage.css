@@ -1,3 +1,7 @@
+.content {
+    color: white;
+    margin: 0 25px;
+}
 div.post-page h1 {
     text-align: center;
     width: 100%;
