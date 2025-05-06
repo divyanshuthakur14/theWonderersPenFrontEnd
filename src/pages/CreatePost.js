@@ -65,11 +65,13 @@ export default function CreatePost() {
         placeholder="Summary"
         value={summary}
         onChange={(ev) => setSummary(ev.target.value)}
+        className="inp2"
       />
       <input 
         type="file" 
         onChange={(ev) => setFiles(ev.target.files)} 
         accept="image/*" 
+        className="inp3"
       />
       <Editor value={content} onChange={setContent} />
       <button style={{ marginTop: "5px" }}>Create post</button>
