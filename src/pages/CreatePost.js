@@ -74,7 +74,10 @@ export default function CreatePost() {
         className="inp3"
       />
       <Editor value={content} onChange={setContent} />
+      <div className="button1">
       <button style={{ marginTop: "5px" }}>Create post</button>
+      </div>
+      
     </form>
     </div>
   );
