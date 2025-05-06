@@ -12,9 +12,10 @@
     height: auto;
     border-radius: 0px;
     object-fit: cover;
+}
+img {
+    max-width: 100%;
   }
-  
-
 /* Post */
 .post {
     display: flex;
