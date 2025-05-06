@@ -5,5 +5,39 @@
     color:white;
 }
 .author {
-    color: red;
+    color: white;
 }
+.image {
+    border-radius: 0;
+}
+
+
+div.post {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  div.post div.texts h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  div.post div.texts a {
+    text-decoration: none;
+    color: inherit;
+  }
+  div.post p.info {
+    margin: 24px 0;
+    color: #888;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+  }
+  div.post p.info a.author {
+    color: #333;
+  }
+  div.post p.summary {
+    margin: 10px 0;
+    line-height: 1.8rem;
+  }
