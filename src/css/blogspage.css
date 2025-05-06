@@ -7,7 +7,6 @@
   .search-input {
     padding: 10px;
     width: 100%;
-    max-width: 600px;
     border-radius: 8px;
     border: 1px solid #ccc;
     margin-bottom: 30px;
@@ -18,9 +17,7 @@
   }
   @media (max-width: 480px) {
     .search-input {
-      width: 80vw;
       font-size: 14px;
-      padding: 8px;
     }
     .blogs-container {
       margin-top: 30px;
