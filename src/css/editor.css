@@ -18,3 +18,27 @@
   color: white !important;
   fill: white !important;
 }
+
+/* Force toolbar icons to always appear white and active */
+.ql-toolbar button,
+.ql-toolbar button:hover,
+.ql-toolbar button:focus,
+.ql-toolbar button.ql-active {
+  color: white !important;
+  opacity: 1 !important;
+}
+
+/* Icons inside buttons */
+.ql-toolbar button svg {
+  stroke: white !important;
+  fill: white !important;
+  opacity: 1 !important;
+}
+
+/* Also target disabled buttons */
+.ql-toolbar button:disabled svg {
+  stroke: white !important;
+  fill: white !important;
+  opacity: 1 !important;
+  pointer-events: auto !important; /* optional: re-enable interaction */
+}
