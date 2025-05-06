@@ -1,6 +1,6 @@
 import Post from "../partials/Post";
 import { useEffect, useState, useCallback } from "react";
-import "../css/home.css";
+import "../css/blogspage.css";
 
 export default function BlogsPage() {
   const [posts, setPosts] = useState([]);
