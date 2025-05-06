@@ -21,14 +21,19 @@ div.post-page time {
     font-size: 1rem;
     color: white;
 }
+div.post-page div.author {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
 
 
 
 .post-page {
     color:white;
-}
-.author {
-    color: white;
 }
 .image img {
     width: 100%;
@@ -231,12 +236,7 @@ img {
     text-decoration: underline;
   }
 
-  div.post-page div.author {
-    text-align: left;
-    margin-bottom: 20px;
-    font-size: 0.7rem;
-    font-weight: bold;
-  }
+
   div.content p {
     line-height: 1.7rem;
     margin: 30px 0;
