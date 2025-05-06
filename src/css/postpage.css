@@ -4,13 +4,26 @@ div.post-page div.image {
     overflow: hidden;
     margin-left: 25%;
 }
-
-  
-
-
 .content {
     color: white;
+    margin: 0 25px;
 }
+div.post-page h1 {
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+div.post-page time {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    color: white;
+}
+
+
+
 .post-page {
     color:white;
 }
@@ -217,17 +230,7 @@ img {
     color: #333;
     text-decoration: underline;
   }
-  div.post-page h1 {
-    text-align: left;
-    margin: 10px 0 5px;
-  }
-  div.post-page time {
-    text-align: left;
-    display: block;
-    font-size: 1rem;
-    color: #aaa;
-    margin: 10px 0;
-  }
+
   div.post-page div.author {
     text-align: left;
     margin-bottom: 20px;
