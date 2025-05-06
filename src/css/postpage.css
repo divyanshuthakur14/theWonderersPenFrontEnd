@@ -1,19 +1,8 @@
-div.post-page div.image {
-    width: 50%;
-    display: flex;
-    overflow: hidden;
-    margin-left: 25%;
-}
-.content {
-    color: white;
-    margin: 0 25px;
-}
 div.post-page h1 {
     text-align: center;
     width: 100%;
     color: white;
 }
-
 div.post-page time {
     text-align: center;
     width: 100%;
@@ -29,6 +18,15 @@ div.post-page div.author {
     color: white;
     width: 100%;
 }
+div.post-page div.image {
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+    margin-left: 25%;
+}
+
+
+
 
 
 
