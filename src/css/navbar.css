@@ -57,10 +57,6 @@
     border-radius: 5px;
     transition: all 0.3s ease;
   }
-  .nav-elements ul a:hover {
-    background-color: #f0f0f0;
-    color: #574c4c;
-  }
   .nav-elements ul a.active {
     color: #574c4c;
     font-weight: 500;
