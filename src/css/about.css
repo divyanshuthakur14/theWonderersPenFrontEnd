@@ -52,7 +52,7 @@
     animation: fadeIn 1.5s ease-in-out;
     color: white;
   }
-  button {
+  .button-home {
     border: 2px solid white;
     padding: 12px 20px;
     color: white;
