@@ -11,6 +11,17 @@
 body {
   overflow-x: hidden;
 }
+@media (max-width: 768px){
+  .contact-info-content {
+  margin-left: 15px;
+  font-size: 0.8rem;
+}
+.container2 {
+  width: 90%;
+  margin: 0px auto;
+ }
+}
+
 
 div.body {
   min-height: 100vh;
@@ -238,9 +249,7 @@ section {
     line-height: 50px;
   }
 
-  .contact-info-content {
-    margin-left: 15px;
-  }
+
 
   .contact-form {
     width: 100%;
@@ -289,6 +298,7 @@ section {
     font-size: 16px;
     padding: 10px;
   }
+  
 }
 @media (min-width: 991px) {
   .contact-form {
