@@ -22,6 +22,9 @@
 .user-image-container {
   margin-bottom: 12px; 
 }
+.heading {
+  margin: 20px 0;
+}
 .user-image {
   width: 70px; 
   height: 70px;
@@ -33,9 +36,9 @@
 .user-image:hover {
   transform: scale(1.05);
 }
-input {
+.loginbuttons {
   margin: 6px 0; 
-  padding: 8px; 
+
   width: 90%;
   box-sizing: border-box;
   font-size: 14px; 
@@ -48,15 +51,18 @@ input:focus {
 }
 .button-forms {
   padding: 8px; 
-  background-color: black;
-  color: #fff;
+  background-color: white;
+  color: gray;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s;
   font-size: 14px; 
   width: 90%;
+  border-radius: 0;
+  margin: 20px 0 ;
 }
+
 .button-forms:hover {
-  background-color: gray;
+  background-color: white;
   transform: scale(1.02);
 }
 .create-account-container {
@@ -78,9 +84,8 @@ input:focus {
   background-color: black;
   font-size: 14px; 
   transition: background-color 0.3s ease;
-}
-.register:hover {
-  background-color: gray;
+  width: 25%;
+  margin: 0 auto;
 }
 @keyframes fadeIn {
   from { opacity: 0; }

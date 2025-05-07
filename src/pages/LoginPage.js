@@ -45,7 +45,7 @@ export default function LoginPage() {
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={login}>
-        <h1>Login</h1>
+        <div className="heading"><h1>Login</h1></div>
         <div className="user-image-container">
           <img
             src="https://img.freepik.com/premium-vector/anonymous-user-circle-icon-vector-illustration-flat-style-with-long-shadow_520826-1931.jpg"
@@ -53,6 +53,7 @@ export default function LoginPage() {
             className="user-image"
           />
         </div>
+        <div className="loginbuttons">
         <input
           type="text"
           placeholder="Email"
@@ -65,12 +66,14 @@ export default function LoginPage() {
           value={password}
           onChange={(ev) => setPassword(ev.target.value)}
         />
+        </div>
+        
         <button className="button-forms" type="submit">
           Login
         </button>
       </form>
 
-      {/* Add Google OAuth login button here */}
+     
       <GoogleAuth />
 
       <div className="create-account-container">

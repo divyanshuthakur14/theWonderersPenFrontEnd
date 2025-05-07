@@ -32,7 +32,7 @@ export default function RegisterPage() {
   return (
     <div className="register-container">
       <form className="register-form" onSubmit={register}>
-        <h1>Register</h1>
+        <div className="heading"><h1>Register</h1></div>
         <div className="user-image-container">
           <img
             src="https://img.freepik.com/premium-vector/anonymous-user-circle-icon-vector-illustration-flat-style-with-long-shadow_520826-1931.jpg"
@@ -40,7 +40,7 @@ export default function RegisterPage() {
             className="user-image"
           />
         </div>
-        <input
+        <div className="loginbuttons"><input
           type="text"
           placeholder="Email"
           value={username}
@@ -51,7 +51,8 @@ export default function RegisterPage() {
           placeholder="Password"
           value={password}
           onChange={(ev) => setPassword(ev.target.value)}
-        />
+        /></div>
+        
         <button className="button-forms register-btn" type="submit">
           Register
         </button>
