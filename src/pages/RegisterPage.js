@@ -42,7 +42,7 @@ export default function RegisterPage() {
         </div>
         <input
           type="text"
-          placeholder="Username"
+          placeholder="Email"
           value={username}
           onChange={(ev) => setUsername(ev.target.value)}
         />

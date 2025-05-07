@@ -55,7 +55,7 @@ export default function LoginPage() {
         </div>
         <input
           type="text"
-          placeholder="Username"
+          placeholder="Email"
           value={username}
           onChange={(ev) => setUsername(ev.target.value)}
         />
