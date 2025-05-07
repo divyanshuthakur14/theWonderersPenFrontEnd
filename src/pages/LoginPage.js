@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../css/forms.css";
-import GoogleAuth from "./GoogleAuth";  // Import your GoogleAuth component
+import GoogleAuth from "./GoogleAuth";  
 
 
 
