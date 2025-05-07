@@ -89,6 +89,8 @@
   .mobile {
     display: none;
     animation: slideInFromRight 1.5s ease-out forwards;
+    height: 60vw;
+    width: 100%;
   }
   @media (max-width: 768px) {
     .side-image {
