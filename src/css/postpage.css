@@ -158,20 +158,13 @@ div.post-page h1 {
       overflow-wrap: break-word;
       white-space: normal;
     }
-  
-
-  
-  
-  
     div.post-page div.author {
       margin-bottom: 15px;
     }
-  
     div.post-page a.edit-btn {
       padding: 10px 20px;
       font-size: 14px;
       text-align: left;
-      
     }
   }
   
@@ -181,7 +174,6 @@ div.post-page h1 {
       max-height: 200px; 
       width: 200px;
     }
-  
     div.post div.image img {
       width: 200px;
       height: auto;
