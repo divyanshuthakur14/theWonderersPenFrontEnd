@@ -79,5 +79,8 @@ div.post p.info {
     .post {
       flex-direction: column;
     }
+    .texts h2 {
+      text-align: center;
+    }
   }
   
