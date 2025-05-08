@@ -24,7 +24,7 @@ body {
 
 
 div.body {
-  min-height: 100vh;
+ 
   width: 100%;
   display: flex;
   justify-content: center;
@@ -33,6 +33,7 @@ div.body {
   background-size: cover;
   background-position: center;
   position: relative;
+  height: 590px;
 }
 
 div.body::after {
@@ -48,8 +49,6 @@ div.body::after {
 section {
   position: relative;
   z-index: 3;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .container-cont {
