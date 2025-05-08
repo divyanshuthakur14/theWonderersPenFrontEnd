@@ -45,7 +45,7 @@ export default function LoginPage() {
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={login}>
-        <div className="heading"><h1>Login</h1></div>
+        <div className="heading"><h1>Sign In</h1></div>
         <div className="user-image-container">
           <img
             src="https://img.freepik.com/premium-vector/anonymous-user-circle-icon-vector-illustration-flat-style-with-long-shadow_520826-1931.jpg"
@@ -71,18 +71,18 @@ export default function LoginPage() {
         <button className="button-forms" type="submit">
           Login
         </button>
+        <GoogleAuth />
       </form>
-
-     
-      <GoogleAuth />
-
       <div className="create-account-container">
-        <p>Don't have an account?</p>
+        <p className="p1">New Here ?</p>
+        <p className="p2">Sign up and discover a great amount of new knowledge</p>
         <button className="register" onClick={createAccount}>
-          Create New Account
+          Sign Up
         </button>
       </div>
       <ToastContainer />
+      
     </div>
+    
   );
 }

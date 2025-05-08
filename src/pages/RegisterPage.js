@@ -32,7 +32,7 @@ export default function RegisterPage() {
   return (
     <div className="register-container">
       <form className="register-form" onSubmit={register}>
-        <div className="heading"><h1>Register</h1></div>
+        <div className="heading"><h1>Sign Up</h1></div>
         <div className="user-image-container">
           <img
             src="https://img.freepik.com/premium-vector/anonymous-user-circle-icon-vector-illustration-flat-style-with-long-shadow_520826-1931.jpg"
@@ -58,9 +58,12 @@ export default function RegisterPage() {
         </button>
       </form>
       <div className="create-account-container">
-        <p>
-          Already have an account? <a href="/login" style={{ color: 'white', textDecoration: 'underline' }} >Login</a>
+        <p className="p1">
+          Already have an account? 
         </p>
+        <p className="p3"><button className="b1"><a href="/login" style={{ color: 'white', textDecoration: 'none' }} >Log In</a></button></p>
+          
+        
       </div>
       <ToastContainer />
     </div>
