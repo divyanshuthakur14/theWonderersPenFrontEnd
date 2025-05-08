@@ -70,7 +70,7 @@ div.post p.info {
   background-color: #f0f0f0;
   color: #333; 
 }
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     .search-input {
       font-size: 14px;
     }
