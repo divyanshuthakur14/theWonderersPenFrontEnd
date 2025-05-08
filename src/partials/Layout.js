@@ -10,14 +10,13 @@ export default function Layout() {
   const isIndexPage = location.pathname === "/";
 
   const mainClass = isIndexPage ? "main-full-width" : "main-normal-width";
-
   return (
-    <>
+    <div className="layout-container">
       <Navbar />
       <main className={mainClass}>
         <Outlet />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
