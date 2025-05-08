@@ -43,37 +43,26 @@ div.post-page h1 {
     white-space: normal; 
 }
 @media(max-width:768px){
-    div.post-page h1 {
+  div.post-page h1 {
         font-size: 1.5rem; 
         text-align: center;
         margin: 10px 0;
         overflow-wrap: break-word;
         white-space: normal; 
-      }
-      div.post-page time,
-      div.post-page div.author {
+  }
+  div.post-page time,
+  div.post-page div.author {
         font-size: 0.8rem; 
         text-align: center;
-      }
+  }
+  div.post-page div.image {
+        max-height: 200px; 
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-.post-page {
-    color:white;
-}
-/* Post */
-
-
-  
+/* post */
   .texts h2 {
     margin: 0;
     font-size: 22px;
@@ -90,7 +79,6 @@ div.post-page h1 {
   }
   
 
-  /* Responsive design */
   @media (max-width: 600px) {
     .post {
       flex-direction: column;
@@ -137,11 +125,7 @@ div.post-page h1 {
   }
   
   @media (max-width: 768px) {
-    div.post-page div.image {
-      max-height: 200px; 
-      width: 200px;
-    }
-  
+   
     div.post-page div.image img {
       width: 200px;
       height: auto;

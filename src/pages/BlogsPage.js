@@ -6,7 +6,6 @@ export default function BlogsPage() {
   const [posts, setPosts] = useState([]);
   const [search, setSearch] = useState("");
 
-  // Memoize fetchPosts to prevent unnecessary re-creation
   const fetchPosts = useCallback(async () => {
     const url = search
       ? `https://thewondererspenbackend.onrender.com/post?search=${encodeURIComponent(search)}`
@@ -19,12 +18,12 @@ export default function BlogsPage() {
     } catch (err) {
       console.error("Failed to fetch posts:", err);
     }
-  }, [search]); // Memoize fetchPosts based on search
+  }, [search]); 
 
-  // Effect to fetch posts whenever search changes
+  
   useEffect(() => {
     fetchPosts();
-  }, [search, fetchPosts]); // Include fetchPosts in dependency array
+  }, [search, fetchPosts]);
 
   return (
     <div className="blogs-container">

@@ -11,15 +11,15 @@ export default function PostPage() {
   const { id } = useParams();
 
   useEffect(() => {
-    // Fetch post information based on the post ID
+    
     fetch(`https://thewondererspenbackend.onrender.com/post/${id}`)
       .then((response) => response.json())
       .then((postInfo) => {
         setPostInfo(postInfo);
       });
-  }, [id]);  // Add 'id' to the dependency array
+  }, [id]);  
 
-  if (!postInfo) return "";  // Render nothing if no post info is available
+  if (!postInfo) return "";  
 
   return (
     <div className="post-page">
