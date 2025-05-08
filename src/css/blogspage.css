@@ -15,8 +15,11 @@ div.post p.summary {
   color: white;
   margin-left: 25%;
 }
-.image {
-  flex: 1 1;
+.texts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .post {
   display: flex;
@@ -53,12 +56,7 @@ div.post p.info {
   margin-left: 25%;
 
 }
-.texts {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 .search-input {
   padding: 10px;
   width: 100%;
