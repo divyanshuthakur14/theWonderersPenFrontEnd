@@ -12,15 +12,34 @@ export default function BlogsPage() {
       : "https://thewondererspenbackend.onrender.com/post";
 
     try {
-      const response = await fetch(url);
+      const response = await fetch(url, {
+        method: "GET",
+        credentials: "include", // ✅ send cookies (for JWT / session)
+      });
+
+      // Handle non-OK responses gracefully
+      if (!response.ok) {
+        console.error("Server error:", response.status);
+        setPosts([]);
+        return;
+      }
+
       const data = await response.json();
+
+      // ✅ prevent crash if backend returns an object (like {error:...})
+      if (!Array.isArray(data)) {
+        console.error("Unexpected data format:", data);
+        setPosts([]);
+        return;
+      }
+
       setPosts(data);
     } catch (err) {
       console.error("Failed to fetch posts:", err);
+      setPosts([]);
     }
-  }, [search]); 
+  }, [search]);
 
-  
   useEffect(() => {
     fetchPosts();
   }, [search, fetchPosts]);
